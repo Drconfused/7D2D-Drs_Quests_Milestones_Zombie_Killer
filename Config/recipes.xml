@@ -1,0 +1,7 @@
+<Drs_Milestones_Zombie_Killer>
+<append xpath="/recipes">
+	<recipe name="Paper_Milestone_Zombie_Kill_100" count="1">
+		<ingredient name="resourcePaper" count="1"/>
+	</recipe>
+</append>
+</Drs_Milestones_Zombie_Killer>

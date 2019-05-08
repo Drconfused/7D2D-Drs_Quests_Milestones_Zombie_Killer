@@ -1,0 +1,13 @@
+<Drs_Milestones_Zombie_Killer>
+<append xpath="/items" >
+<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+<!-- ~~~~~~~~~~Milestone quests paper if adding to existing game~~~~~~~ -->	
+	<item name="Paper_Milestone_Zombie_Kill_100">
+		<property name="Extends" value="questMaster" />
+		<property name="Description" value="Base Constructor 1" />
+		<property class="Action0">
+			<property name="QuestGiven" value="Milestone_Zombie_Kill_100" />
+		</property>
+	</item>
+</append>
+</Drs_Milestones_Zombie_Killer>

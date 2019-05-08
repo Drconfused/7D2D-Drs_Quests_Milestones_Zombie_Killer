@@ -1,0 +1,277 @@
+<Drs_Milestones_Zombie_Killer>
+<!-- alright lets add the quest to the start of the game 
+	<append xpath="quest_BasicSurvival1">
+			<reward type="Quest" id="Milestone_Zombie_Kill_500" />
+	</append>
+-->	
+<append xpath="/quests">
+
+<!--
+	<quest id="quest_whiteRiverCitizen1">
+		<property name="group_name_key" value="quest_WhiteRiverCitizen" />
+		<property name="name_key" value="quest_WhiteRiverCitizen1" />
+		<property name="subtitle_key" value="quest_WhiteRiverCitizen1_subtitle" />
+		<property name="description_key" value="quest_WhiteRiverCitizen1_description" />
+		<property name="icon" value="ui_game_symbol_map_trader" />
+		<property name="category_key" value="quest" />
+		<property name="difficulty" value="medium" />
+		<property name="shareable" value="false" />
+
+		<action type="ShowTip" value="quest_WhiteRiverCitizen1_description">
+			<property name="delay" value="3" />
+		</action>
+		<objective type="Goto" id="trader" value="5" phase="1" />
+
+		<objective type="InteractWithNPC">
+			<property name="phase" value="2" />
+		</objective>
+
+		<reward type="Exp" value="1000" />
+		<reward type="Item" id="bedroll" value="1" />
+		<reward type="Item" id="Impact Wrench" value="1" />
+		<reward type="Item" id="meleeToolAuger" value="1" />
+		<reward type="Item" id="meleeToolChainsaw" value="1" />
+		<reward type="Item" id="ammoGasCan" value="1000" />
+		<reward type="Item" id="overalls" value="1" />
+		<reward type="Item" id="flannelShirtRed" value="1" />
+		<reward type="Item" id="armorMiningHelmet" value="1" />
+		<reward type="Item" id="wornBoots" value="1" />
+		<reward type="Item" id="armorLeatherGloves" value="1" />
+		<reward type="Item" id="q_BaseConstructor1" value="1" />
+	</quest>
+-->
+
+
+	<quest id="Milestone_Zombie_Kill_100">
+		<!-- <property name="group_name" value="Second_Base" /> -->
+		<property name="name" value="Zombies Killed 100" />
+		<property name="subtitle" value="Kill 100 zombies" />
+		<property name="description" value="Gain some prestige in the area by killing zombies." />
+		<property name="icon" value="ui_game_symbol_skull" />
+		<property name="category_key" value="quest" />
+		<property name="difficulty" value="easy"/> 
+		<property name="offer" value="Killing zombies is now a lifestyle" />
+		<property name="shareable" value="false" />
+		<property name="completiontype" value="TurnIn" />
+		<property name="completion_key" value="You sure are making a dent in the zombie population around here, a tiny dent but one none the less!" />
+		
+		<objective type="ZombieKill" value="100" phase="1" />
+
+		<objective type="ReturnToNPC">
+			<property name="phase" value="2" />
+		</objective>
+		<objective type="InteractWithNPC">
+			<property name="phase" value="2" />
+		</objective>
+	
+		<reward type="Exp" value="1000" />	
+		<reward type="Item" id="casinoCoin" value="300-1000" />
+		<reward type="Item" id="ammoGasCan" value="1000" />
+		<reward type="LootItem" id="questMods" value="1" />
+		<reward type="LootItem" id="questTools" value="1" />
+		<reward type="Quest" id="Milestone_Zombie_Kill_500" />
+	</quest>
+	<quest id="Milestone_Zombie_Kill_500">
+		<!-- <property name="group_name" value="Second_Base" /> -->
+		<property name="name" value="Zombies Killed 500" />
+		<property name="subtitle" value="Kill 100 zombies" />
+		<property name="description" value="Gain some prestige in the area by killing zombies." />
+		<property name="icon" value="ui_game_symbol_skull" />
+		<property name="category_key" value="quest" />
+		<property name="difficulty" value="easy"/> 
+		<property name="offer" value="Killing zombies is now a lifestyle" />
+		<property name="shareable" value="false" />
+		<property name="completiontype" value="TurnIn" />
+		<property name="completion_key" value="You sure are making a dent in the zombie population around here, a tiny dent but one none the less!" />
+		
+		<objective type="ZombieKill" value="500" phase="1" />
+
+		<objective type="ReturnToNPC">
+			<property name="phase" value="2" />
+		</objective>
+		<objective type="InteractWithNPC">
+			<property name="phase" value="2" />
+		</objective>
+	
+		<reward type="Exp" value="2000" />	
+		<reward type="Item" id="casinoCoin" value="600-2000" />
+		<reward type="Item" id="ammoGasCan" value="2000" />
+		<reward type="LootItem" id="questMods" value="1" />
+		<reward type="LootItem" id="questTools" value="1" />
+		<reward type="Quest" id="Milestone_Zombie_Kill_1000" />
+	</quest>
+	<quest id="Milestone_Zombie_Kill_1000">
+		<!-- <property name="group_name" value="Second_Base" /> -->
+		<property name="name" value="Zombies Killed 1000" />
+		<property name="subtitle" value="Kill 100 zombies" />
+		<property name="description" value="Gain some prestige in the area by killing zombies." />
+		<property name="icon" value="ui_game_symbol_skull" />
+		<property name="category_key" value="quest" />
+		<property name="difficulty" value="easy"/> 
+		<property name="offer" value="Killing zombies is now a lifestyle" />
+		<property name="shareable" value="false" />
+		<property name="completiontype" value="TurnIn" />
+		<property name="completion_key" value="You sure are making a dent in the zombie population around here, a tiny dent but one none the less!" />
+		
+		<objective type="ZombieKill" value="1000" phase="1" />
+
+		<objective type="ReturnToNPC">
+			<property name="phase" value="2" />
+		</objective>
+		<objective type="InteractWithNPC">
+			<property name="phase" value="2" />
+		</objective>
+	
+		<reward type="Exp" value="4000" />	
+		<reward type="Item" id="casinoCoin" value="1200-4000" />
+		<reward type="Item" id="ammoGasCan" value="4000" />
+		<reward type="LootItem" id="questMods" value="1" />
+		<reward type="LootItem" id="questTools" value="1" />
+		<reward type="Quest" id="Milestone_Zombie_Kill_5000" />
+	</quest>
+	<quest id="Milestone_Zombie_Kill_5000">
+		<!-- <property name="group_name" value="Second_Base" /> -->
+		<property name="name" value="Zombies Killed 5000" />
+		<property name="subtitle" value="Kill 100 zombies" />
+		<property name="description" value="Gain some prestige in the area by killing zombies." />
+		<property name="icon" value="ui_game_symbol_skull" />
+		<property name="category_key" value="quest" />
+		<property name="difficulty" value="easy"/> 
+		<property name="offer" value="Killing zombies is now a lifestyle" />
+		<property name="shareable" value="false" />
+		<property name="completiontype" value="TurnIn" />
+		<property name="completion_key" value="You sure are making a dent in the zombie population around here, a tiny dent but one none the less!" />
+		
+		<objective type="ZombieKill" value="5000" phase="1" />
+
+		<objective type="ReturnToNPC">
+			<property name="phase" value="2" />
+		</objective>
+		<objective type="InteractWithNPC">
+			<property name="phase" value="2" />
+		</objective>
+	
+		<reward type="Exp" value="8000" />	
+		<reward type="Item" id="casinoCoin" value="2400-8000" />
+		<reward type="Item" id="ammoGasCan" value="8000" />
+		<reward type="LootItem" id="questMods" value="1" />
+		<reward type="LootItem" id="questTools" value="1" />
+		<reward type="Quest" id="Milestone_Zombie_Kill_10000" />
+	</quest>
+	<quest id="Milestone_Zombie_Kill_10000">
+		<!-- <property name="group_name" value="Second_Base" /> -->
+		<property name="name" value="Zombies Killed 10000" />
+		<property name="subtitle" value="Kill 100 zombies" />
+		<property name="description" value="Gain some prestige in the area by killing zombies." />
+		<property name="icon" value="ui_game_symbol_skull" />
+		<property name="category_key" value="quest" />
+		<property name="difficulty" value="easy"/> 
+		<property name="offer" value="Killing zombies is now a lifestyle" />
+		<property name="shareable" value="false" />
+		<property name="completiontype" value="TurnIn" />
+		<property name="completion_key" value="You sure are making a dent in the zombie population around here, a tiny dent but one none the less!" />
+		
+		<objective type="ZombieKill" value="10000" phase="1" />
+
+		<objective type="ReturnToNPC">
+			<property name="phase" value="2" />
+		</objective>
+		<objective type="InteractWithNPC">
+			<property name="phase" value="2" />
+		</objective>
+	
+		<reward type="Exp" value="10000" />	
+		<reward type="Item" id="casinoCoin" value="4800-16000" />
+		<reward type="Item" id="ammoGasCan" value="10000" />
+		<reward type="LootItem" id="questMods" value="1" />
+		<reward type="LootItem" id="questTools" value="1" />
+		<reward type="Quest" id="Milestone_Zombie_Kill_50000" />
+	</quest>
+	<quest id="Milestone_Zombie_Kill_50000">
+		<!-- <property name="group_name" value="Second_Base" /> -->
+		<property name="name" value="Zombies Killed 50000" />
+		<property name="subtitle" value="Kill 100 zombies" />
+		<property name="description" value="Gain some prestige in the area by killing zombies." />
+		<property name="icon" value="ui_game_symbol_skull" />
+		<property name="category_key" value="quest" />
+		<property name="difficulty" value="easy"/> 
+		<property name="offer" value="Killing zombies is now a lifestyle" />
+		<property name="shareable" value="false" />
+		<property name="completiontype" value="TurnIn" />
+		<property name="completion_key" value="You sure are making a dent in the zombie population around here, a tiny dent but one none the less!" />
+		
+		<objective type="ZombieKill" value="50000" phase="1" />
+
+		<objective type="ReturnToNPC">
+			<property name="phase" value="2" />
+		</objective>
+		<objective type="InteractWithNPC">
+			<property name="phase" value="2" />
+		</objective>
+	
+		<reward type="Exp" value="10000" />	
+		<reward type="Item" id="casinoCoin" value="9600-32000" />
+		<reward type="Item" id="ammoGasCan" value="10000" />
+		<reward type="LootItem" id="questMods" value="1" />
+		<reward type="LootItem" id="questTools" value="1" />
+		<reward type="Quest" id="Milestone_Zombie_Kill_100000" />
+	</quest>
+	<quest id="Milestone_Zombie_Kill_100000">
+		<!-- <property name="group_name" value="Second_Base" /> -->
+		<property name="name" value="Zombies Killed 100000" />
+		<property name="subtitle" value="Kill 100 zombies" />
+		<property name="description" value="Gain some prestige in the area by killing zombies." />
+		<property name="icon" value="ui_game_symbol_skull" />
+		<property name="category_key" value="quest" />
+		<property name="difficulty" value="easy"/> 
+		<property name="offer" value="Killing zombies is now a lifestyle" />
+		<property name="shareable" value="false" />
+		<property name="completiontype" value="TurnIn" />
+		<property name="completion_key" value="You sure are making a dent in the zombie population around here, a tiny dent but one none the less!" />
+		
+		<objective type="ZombieKill" value="100000" phase="1" />
+
+		<objective type="ReturnToNPC">
+			<property name="phase" value="2" />
+		</objective>
+		<objective type="InteractWithNPC">
+			<property name="phase" value="2" />
+		</objective>
+	
+		<reward type="Exp" value="10000" />	
+		<reward type="Item" id="casinoCoin" value="19200-64000" />
+		<reward type="Item" id="ammoGasCan" value="10000" />
+		<reward type="LootItem" id="questMods" value="1" />
+		<reward type="LootItem" id="questTools" value="1" />
+		<reward type="Quest" id="Milestone_Zombie_Kill_500000" />
+	</quest>
+	<quest id="Milestone_Zombie_Kill_500000">
+		<!-- <property name="group_name" value="Second_Base" /> -->
+		<property name="name" value="Zombies Killed 500000" />
+		<property name="subtitle" value="Kill 100 zombies" />
+		<property name="description" value="Gain some prestige in the area by killing zombies." />
+		<property name="icon" value="ui_game_symbol_skull" />
+		<property name="category_key" value="quest" />
+		<property name="difficulty" value="easy"/> 
+		<property name="offer" value="Killing zombies is now a lifestyle" />
+		<property name="shareable" value="false" />
+		<property name="completiontype" value="TurnIn" />
+		<property name="completion_key" value="You sure are making a dent in the zombie population around here, a tiny dent but one none the less!" />
+		
+		<objective type="ZombieKill" value="500000" phase="1" />
+
+		<objective type="ReturnToNPC">
+			<property name="phase" value="2" />
+		</objective>
+		<objective type="InteractWithNPC">
+			<property name="phase" value="2" />
+		</objective>
+	
+		<reward type="Exp" value="10000" />	
+		<reward type="Item" id="casinoCoin" value="38400-128000" />
+		<reward type="Item" id="ammoGasCan" value="10000" />
+		<reward type="LootItem" id="questMods" value="1" />
+		<reward type="LootItem" id="questTools" value="1" />
+	</quest>
+</append>
+</Drs_Milestones_Zombie_Killer>
