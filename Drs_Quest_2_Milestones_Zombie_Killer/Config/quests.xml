@@ -1,0 +1,489 @@
+<Drs_Milestones_Zombie_Killer>
+
+	<append xpath="quest_BasicSurvival1">
+			<reward type="Quest" id="Milestone_Zombie_Kill_100"/>
+	</append>
+	
+<append xpath="/quests">
+<!--	Add in the zombie kill quest that auto repeats on completion and awards a quest chit per 100 zombie kills -->
+	<quest id="Milestone_Zombie_Kill_100">	
+		<property name="name" value="Zombies Killed 100"/>
+		<property name="subtitle" value="Kill 100 zombies"/>
+		<property name="description" value="Gain some prestige in the area by killing zombies."/>
+		<property name="icon" value="ui_game_symbol_skull"/>
+		<property name="repeatable" value="true" />
+		<property name="category_key" value="quest"/>
+		<property name="difficulty" value="easy"/> 
+		<property name="offer" value="Killing zombies is now a lifestyle"/>
+		<property name="shareable" value="false"/>
+
+		<objective type="ZombieKill" value="100" phase="1"/>
+	
+		<reward type="Exp" value="1000"/>
+		<reward type="Item" id="Quest_Chit" value="1"/>
+		<reward type="Quest" id="Milestone_Zombie_Kill_100_"/>
+	</quest>
+	<quest id="Milestone_Zombie_Kill_100_">	
+		<property name="name" value="Zombies Killed 100"/>
+		<property name="subtitle" value="Kill 100 zombies"/>
+		<property name="description" value="Gain some prestige in the area by killing zombies."/>
+		<property name="icon" value="ui_game_symbol_skull"/>
+		<property name="repeatable" value="true" />
+		<property name="category_key" value="quest"/>
+		<property name="difficulty" value="easy"/> 
+		<property name="offer" value="Killing zombies is now a lifestyle"/>
+		<property name="shareable" value="false"/>
+
+		<objective type="ZombieKill" value="100" phase="1"/>
+	
+		<reward type="Exp" value="1000"/>
+		<reward type="Item" id="Quest_Chit" value="1"/>
+		<reward type="Quest" id="Milestone_Zombie_Kill_100"/>
+	</quest>
+<!--	Make the hand in quest for the chits -->
+	<quest id="Quest_Chit1">
+		<property name="name" value="1 Quest Chit Exchange" />
+		<property name="subtitle" value="Traded 1 quest chit for rewards" />
+		<property name="description" value="Traded 1 quest chit to the Trader for rewards." />
+		<property name="icon" value="ui_game_symbol_loot_sack" />
+		<property name="repeatable" value="true" />
+		<property name="category" value="treasure" />
+		<property name="offer" value="Traded 1 quest chit to the Trader for rewards." />
+		<property name="difficulty" value="veryeasy" />
+		<property name="shareable" value="false"/>
+		<property name="completiontype" value="TurnIn" />
+		<property name="completion_key" value="You sure are making a dent in the zombie population around here, a tiny dent but one none the less!"/>
+
+		<objective type="ReturnToNPC">
+			<property name="phase" value="1" />
+		</objective>
+		
+		<reward type="Exp" value="1000" />
+		<reward type="Item" id="casinoCoin" value="300-1000" />
+		<reward type="Item" id="ammoGasCan" value="1000" />
+		<reward type="LootItem" id="ammo" value="2" />
+		<reward type="LootItem" id="questKillerAmmo" ischosen="true" value="11" />
+		<reward type="LootItem" id="questKillerArmor" ischosen="true" value="11" />
+		<reward type="LootItem" id="questKillerGuns" ischosen="true" value="11" />
+		<reward type="LootItem" id="questKillerMelee" ischosen="true" value="11" />
+		<reward type="LootItem" id="questMods" value="2" />
+		
+		<reward type="LootItem" id="questBaseDefense" ischosen="true" value="11" />
+		<reward type="LootItem" id="questConstructionBlocks,questConstructionMaterials,questConstructionExtras" value="11" />
+		
+	</quest>	
+	<quest id="Quest_Chit5">
+		<property name="name" value="5 Quest Chit Exchange" />
+		<property name="subtitle" value="Traded 5 quest chit for rewards" />
+		<property name="description" value="Traded 5 quest chit to the Trader for rewards." />
+		<property name="icon" value="ui_game_symbol_loot_sack" />
+		<property name="repeatable" value="true" />
+		<property name="category" value="treasure" />
+		<property name="offer" value="Traded 5 quest chit to the Trader for rewards." />
+		<property name="difficulty" value="veryeasy" />
+		<property name="shareable" value="false"/>
+		<property name="completiontype" value="TurnIn" />
+		<property name="completion_key" value="You sure are making a dent in the zombie population around here, a tiny dent but one none the less!"/>
+
+		<objective type="ReturnToNPC">
+			<property name="phase" value="1" />
+		</objective>
+		
+		<reward type="Exp" value="2000" />
+		<reward type="Item" id="casinoCoin" value="600-2000" />
+		<reward type="Item" id="ammoGasCan" value="2000" />
+		<reward type="LootItem" id="ammo" value="4" />
+		<reward type="LootItem" id="questKillerAmmo" ischosen="true" value="14" />
+		<reward type="LootItem" id="questKillerArmor" ischosen="true" value="14" />
+		<reward type="LootItem" id="questKillerGuns" ischosen="true" value="14" />
+		<reward type="LootItem" id="questKillerMelee" ischosen="true" value="14" />
+		<reward type="LootItem" id="questMods" value="4" />
+		<reward type="LootItem" id="questConstructionBlocks,questConstructionMaterials,questConstructionExtras" ischosen="true" isfixed="true" value="14" />
+		
+	</quest>	
+	<quest id="Quest_Chit10">
+		<property name="name" value="10 Quest Chit Exchange" />
+		<property name="subtitle" value="Traded 10 quest chit for rewards" />
+		<property name="description" value="Traded 10 quest chit to the Trader for rewards." />
+		<property name="icon" value="ui_game_symbol_loot_sack" />
+		<property name="repeatable" value="true" />
+		<property name="category" value="treasure" />
+		<property name="offer" value="Traded 10 quest chit to the Trader for rewards." />
+		<property name="difficulty" value="veryeasy" />
+		<property name="shareable" value="false"/>
+		<property name="completiontype" value="TurnIn" />
+		<property name="completion_key" value="You sure are making a dent in the zombie population around here, a tiny dent but one none the less!"/>
+
+		<objective type="ReturnToNPC">
+			<property name="phase" value="1" />
+		</objective>
+		
+		<reward type="Exp" value="4000" />
+		<reward type="Item" id="casinoCoin" value="1200-4000" />
+		<reward type="Item" id="ammoGasCan" value="4000" />
+		<reward type="LootItem" id="ammo" value="6" />
+		<reward type="LootItem" id="questKillerAmmo" ischosen="true" value="16" />
+		<reward type="LootItem" id="questKillerArmor" ischosen="true" value="16" />
+		<reward type="LootItem" id="questKillerGuns" ischosen="true" value="16" />
+		<reward type="LootItem" id="questKillerMelee" ischosen="true" value="16" />
+		<reward type="LootItem" id="questMods" value="6" />
+		<reward type="LootItem" id="questConstructionBlocks,questConstructionMaterials,questConstructionExtras" ischosen="true" isfixed="true" value="16" />
+		<reward type="SkillPoints" value="1" />
+		
+	</quest>	
+	<quest id="Quest_Chit50">
+		<property name="name" value="50 Quest Chit Exchange" />
+		<property name="subtitle" value="Traded 50 quest chit for rewards" />
+		<property name="description" value="Traded 50 quest chit to the Trader for rewards." />
+		<property name="icon" value="ui_game_symbol_loot_sack" />
+		<property name="repeatable" value="true" />
+		<property name="category" value="treasure" />
+		<property name="offer" value="Traded 50 quest chit to the Trader for rewards." />
+		<property name="difficulty" value="veryeasy" />
+		<property name="shareable" value="false"/>
+		<property name="completiontype" value="TurnIn" />
+		<property name="completion_key" value="You sure are making a dent in the zombie population around here, a tiny dent but one none the less!"/>
+
+		<objective type="ReturnToNPC">
+			<property name="phase" value="1" />
+		</objective>
+		
+		<reward type="Exp" value="8000" />
+		<reward type="Item" id="casinoCoin" value="2400-8000" />
+		<reward type="Item" id="ammoGasCan" value="8000" />
+		<reward type="LootItem" id="ammo" value="6" />
+		<reward type="LootItem" id="questKillerAmmo" ischosen="true" value="16" />
+		<reward type="LootItem" id="questKillerArmor" ischosen="true" value="16" />
+		<reward type="LootItem" id="questKillerGuns" ischosen="true" value="16" />
+		<reward type="LootItem" id="questKillerMelee" ischosen="true" value="16" />
+		<reward type="LootItem" id="questMods" value="6" />
+		<reward type="LootItem" id="questConstructionBlocks,questConstructionMaterials,questConstructionExtras" ischosen="true" isfixed="true" value="16" />
+		<reward type="SkillPoints" value="1" />
+		
+	</quest>	
+	<quest id="Quest_Chit100">
+		<property name="name" value="100 Quest Chit Exchange" />
+		<property name="subtitle" value="Traded 100 quest chit for rewards" />
+		<property name="description" value="Traded 100 quest chit to the Trader for rewards." />
+		<property name="icon" value="ui_game_symbol_loot_sack" />
+		<property name="repeatable" value="true" />
+		<property name="category" value="treasure" />
+		<property name="offer" value="Traded 100 quest chit to the Trader for rewards." />
+		<property name="difficulty" value="veryeasy" />
+		<property name="shareable" value="false"/>
+		<property name="completiontype" value="TurnIn" />
+		<property name="completion_key" value="You sure are making a dent in the zombie population around here, a tiny dent but one none the less!"/>
+
+		<objective type="ReturnToNPC">
+			<property name="phase" value="1" />
+		</objective>
+		
+		<reward type="Exp" value="10000" />
+		<reward type="Item" id="casinoCoin" value="4800-16000" />
+		<reward type="Item" id="ammoGasCan" value="10000" />
+		<reward type="LootItem" id="ammo" value="6" />
+		<reward type="LootItem" id="questKillerAmmo" ischosen="true" value="16" />
+		<reward type="LootItem" id="questKillerArmor" ischosen="true" value="16" />
+		<reward type="LootItem" id="questKillerGuns" ischosen="true" value="16" />
+		<reward type="LootItem" id="questKillerMelee" ischosen="true" value="16" />
+		<reward type="LootItem" id="questMods" value="6" />
+		<reward type="LootItem" id="questConstructionBlocks,questConstructionMaterials,questConstructionExtras" ischosen="true" isfixed="true" value="16" />
+		<reward type="SkillPoints" value="1" />
+		
+	</quest>	
+	<quest id="Quest_Chit500">
+		<property name="name" value="500 Quest Chit Exchange" />
+		<property name="subtitle" value="Traded 500 quest chit for rewards" />
+		<property name="description" value="Traded 500 quest chit to the Trader for rewards." />
+		<property name="icon" value="ui_game_symbol_loot_sack" />
+		<property name="repeatable" value="true" />
+		<property name="category" value="treasure" />
+		<property name="offer" value="Traded 500 quest chit to the Trader for rewards." />
+		<property name="difficulty" value="veryeasy" />
+		<property name="shareable" value="false"/>
+		<property name="completiontype" value="TurnIn" />
+		<property name="completion_key" value="You sure are making a dent in the zombie population around here, a tiny dent but one none the less!"/>
+
+		<objective type="ReturnToNPC">
+			<property name="phase" value="1" />
+		</objective>
+		
+		<reward type="Exp" value="10000" />
+		<reward type="Item" id="casinoCoin" value="9600-32000" />
+		<reward type="Item" id="ammoGasCan" value="10000" />
+		<reward type="LootItem" id="ammo" value="6" />
+		<reward type="LootItem" id="questKillerAmmo" ischosen="true" value="16" />
+		<reward type="LootItem" id="questKillerArmor" ischosen="true" value="16" />
+		<reward type="LootItem" id="questKillerGuns" ischosen="true" value="16" />
+		<reward type="LootItem" id="questKillerMelee" ischosen="true" value="16" />
+		<reward type="LootItem" id="questMods" value="6" />
+		<reward type="LootItem" id="questConstructionBlocks,questConstructionMaterials,questConstructionExtras" ischosen="true" isfixed="true" value="16" />
+		<reward type="SkillPoints" value="1" />
+		
+	</quest>	
+	<quest id="Quest_Chit1000">
+		<property name="name" value="1000 Quest Chit Exchange" />
+		<property name="subtitle" value="Traded 1000 quest chit for rewards" />
+		<property name="description" value="Traded 1000 quest chit to the Trader for rewards." />
+		<property name="icon" value="ui_game_symbol_loot_sack" />
+		<property name="repeatable" value="true" />
+		<property name="category" value="treasure" />
+		<property name="offer" value="Traded 1000 quest chit to the Trader for rewards." />
+		<property name="difficulty" value="veryeasy" />
+		<property name="shareable" value="false"/>
+		<property name="completiontype" value="TurnIn" />
+		<property name="completion_key" value="You sure are making a dent in the zombie population around here, a tiny dent but one none the less!"/>
+
+		<objective type="ReturnToNPC">
+			<property name="phase" value="1" />
+		</objective>
+		
+		<reward type="Exp" value="10000" />
+		<reward type="Item" id="casinoCoin" value="19200-64000" />
+		<reward type="Item" id="ammoGasCan" value="10000" />
+		<reward type="LootItem" id="ammo" value="6" />
+		<reward type="LootItem" id="questKillerAmmo" ischosen="true" value="16" />
+		<reward type="LootItem" id="questKillerArmor" ischosen="true" value="16" />
+		<reward type="LootItem" id="questKillerGuns" ischosen="true" value="16" />
+		<reward type="LootItem" id="questKillerMelee" ischosen="true" value="16" />
+		<reward type="LootItem" id="questMods" value="6" />
+		<reward type="LootItem" id="questConstructionBlocks,questConstructionMaterials,questConstructionExtras" ischosen="true" isfixed="true" value="16" />
+		<reward type="SkillPoints" value="1" />
+		
+	</quest>	
+	<quest id="Quest_Chit5000">
+		<property name="name" value="5000 Quest Chit Exchange" />
+		<property name="subtitle" value="Traded 5000 quest chit for rewards" />
+		<property name="description" value="Traded 5000 quest chit to the Trader for rewards." />
+		<property name="icon" value="ui_game_symbol_loot_sack" />
+		<property name="repeatable" value="true" />
+		<property name="category" value="treasure" />
+		<property name="offer" value="Traded 5000 quest chit to the Trader for rewards." />
+		<property name="difficulty" value="veryeasy" />
+		<property name="shareable" value="false"/>
+		<property name="completiontype" value="TurnIn" />
+		<property name="completion_key" value="You sure are making a dent in the zombie population around here, a tiny dent but one none the less!"/>
+
+		<objective type="ReturnToNPC">
+			<property name="phase" value="1" />
+		</objective>
+		
+		<reward type="Exp" value="10000" />
+		<reward type="Item" id="casinoCoin" value="38400-128000" />
+		<reward type="Item" id="ammoGasCan" value="10000" />
+		<reward type="LootItem" id="ammo" value="6" />
+		<reward type="LootItem" id="questKillerAmmo" ischosen="true" value="16" />
+		<reward type="LootItem" id="questKillerArmor" ischosen="true" value="16" />
+		<reward type="LootItem" id="questKillerGuns" ischosen="true" value="16" />
+		<reward type="LootItem" id="questKillerMelee" ischosen="true" value="16" />
+		<reward type="LootItem" id="questMods" value="6" />
+		<reward type="LootItem" id="questConstructionBlocks,questConstructionMaterials,questConstructionExtras" ischosen="true" isfixed="true" value="16" />
+		<reward type="SkillPoints" value="1" />	
+	</quest>	
+
+<!-- This is removed because of limitations resetting kill counter at 284.
+	<quest id="Milestone_Zombie_Kill_500">
+		
+		<property name="name" value="Zombies Killed 500"/>
+		<property name="subtitle" value="Kill 100 zombies"/>
+		<property name="description" value="Gain some prestige in the area by killing zombies."/>
+		<property name="icon" value="ui_game_symbol_skull"/>
+		<property name="category_key" value="quest"/>
+		<property name="difficulty" value="easy"/> 
+		<property name="offer" value="Killing zombies is now a lifestyle"/>
+		<property name="shareable" value="false"/>
+		<property name="completiontype" value="TurnIn"/>
+		<property name="completion_key" value="You sure are making a dent in the zombie population around here, a tiny dent but one none the less!"/>
+		
+		<objective type="ZombieKill" value="500" phase="1"/>
+
+		<objective type="ReturnToNPC">
+			<property name="phase" value="2"/>
+		</objective>
+		<objective type="InteractWithNPC">
+			<property name="phase" value="2"/>
+		</objective>
+	
+		<reward type="Exp" value="2000"/>	
+		<reward type="Item" id="casinoCoin" value="600-2000"/>
+		<reward type="Item" id="ammoGasCan" value="2000"/>
+		<reward type="LootItem" id="questMods" value="1"/>
+		<reward type="LootItem" id="questTools" value="1"/>
+		<reward type="Quest" id="Milestone_Zombie_Kill_1000"/>
+	</quest>
+	<quest id="Milestone_Zombie_Kill_1000">
+		
+		<property name="name" value="Zombies Killed 1000"/>
+		<property name="subtitle" value="Kill 100 zombies"/>
+		<property name="description" value="Gain some prestige in the area by killing zombies."/>
+		<property name="icon" value="ui_game_symbol_skull"/>
+		<property name="category_key" value="quest"/>
+		<property name="difficulty" value="easy"/> 
+		<property name="offer" value="Killing zombies is now a lifestyle"/>
+		<property name="shareable" value="false"/>
+		<property name="completiontype" value="TurnIn"/>
+		<property name="completion_key" value="You sure are making a dent in the zombie population around here, a tiny dent but one none the less!"/>
+		
+		<objective type="ZombieKill" value="1000" phase="1"/>
+
+		<objective type="ReturnToNPC">
+			<property name="phase" value="2"/>
+		</objective>
+		<objective type="InteractWithNPC">
+			<property name="phase" value="2"/>
+		</objective>
+	
+		<reward type="Exp" value="4000"/>	
+		<reward type="Item" id="casinoCoin" value="1200-4000"/>
+		<reward type="Item" id="ammoGasCan" value="4000"/>
+		<reward type="LootItem" id="questMods" value="1"/>
+		<reward type="LootItem" id="questTools" value="1"/>
+		<reward type="Quest" id="Milestone_Zombie_Kill_5000"/>
+	</quest>
+	<quest id="Milestone_Zombie_Kill_5000">
+		
+		<property name="name" value="Zombies Killed 5000"/>
+		<property name="subtitle" value="Kill 100 zombies"/>
+		<property name="description" value="Gain some prestige in the area by killing zombies."/>
+		<property name="icon" value="ui_game_symbol_skull"/>
+		<property name="category_key" value="quest"/>
+		<property name="difficulty" value="easy"/> 
+		<property name="offer" value="Killing zombies is now a lifestyle"/>
+		<property name="shareable" value="false"/>
+		<property name="completiontype" value="TurnIn"/>
+		<property name="completion_key" value="You sure are making a dent in the zombie population around here, a tiny dent but one none the less!"/>
+		
+		<objective type="ZombieKill" value="5000" phase="1"/>
+
+		<objective type="ReturnToNPC">
+			<property name="phase" value="2"/>
+		</objective>
+		<objective type="InteractWithNPC">
+			<property name="phase" value="2"/>
+		</objective>
+	
+		<reward type="Exp" value="8000"/>	
+		<reward type="Item" id="casinoCoin" value="2400-8000"/>
+		<reward type="Item" id="ammoGasCan" value="8000"/>
+		<reward type="LootItem" id="questMods" value="1"/>
+		<reward type="LootItem" id="questTools" value="1"/>
+		<reward type="Quest" id="Milestone_Zombie_Kill_10000"/>
+	</quest>
+	<quest id="Milestone_Zombie_Kill_10000">
+		
+		<property name="name" value="Zombies Killed 10000"/>
+		<property name="subtitle" value="Kill 100 zombies"/>
+		<property name="description" value="Gain some prestige in the area by killing zombies."/>
+		<property name="icon" value="ui_game_symbol_skull"/>
+		<property name="category_key" value="quest"/>
+		<property name="difficulty" value="easy"/> 
+		<property name="offer" value="Killing zombies is now a lifestyle"/>
+		<property name="shareable" value="false"/>
+		<property name="completiontype" value="TurnIn"/>
+		<property name="completion_key" value="You sure are making a dent in the zombie population around here, a tiny dent but one none the less!"/>
+		
+		<objective type="ZombieKill" value="10000" phase="1"/>
+
+		<objective type="ReturnToNPC">
+			<property name="phase" value="2"/>
+		</objective>
+		<objective type="InteractWithNPC">
+			<property name="phase" value="2"/>
+		</objective>
+	
+		<reward type="Exp" value="10000"/>	
+		<reward type="Item" id="casinoCoin" value="4800-16000"/>
+		<reward type="Item" id="ammoGasCan" value="10000"/>
+		<reward type="LootItem" id="questMods" value="1"/>
+		<reward type="LootItem" id="questTools" value="1"/>
+		<reward type="Quest" id="Milestone_Zombie_Kill_50000"/>
+	</quest>
+	<quest id="Milestone_Zombie_Kill_50000">
+		
+		<property name="name" value="Zombies Killed 50000"/>
+		<property name="subtitle" value="Kill 100 zombies"/>
+		<property name="description" value="Gain some prestige in the area by killing zombies."/>
+		<property name="icon" value="ui_game_symbol_skull"/>
+		<property name="category_key" value="quest"/>
+		<property name="difficulty" value="easy"/> 
+		<property name="offer" value="Killing zombies is now a lifestyle"/>
+		<property name="shareable" value="false"/>
+		<property name="completiontype" value="TurnIn"/>
+		<property name="completion_key" value="You sure are making a dent in the zombie population around here, a tiny dent but one none the less!"/>
+		
+		<objective type="ZombieKill" value="50000" phase="1"/>
+
+		<objective type="ReturnToNPC">
+			<property name="phase" value="2"/>
+		</objective>
+		<objective type="InteractWithNPC">
+			<property name="phase" value="2"/>
+		</objective>
+	
+		<reward type="Exp" value="10000"/>	
+		<reward type="Item" id="casinoCoin" value="9600-32000"/>
+		<reward type="Item" id="ammoGasCan" value="10000"/>
+		<reward type="LootItem" id="questMods" value="1"/>
+		<reward type="LootItem" id="questTools" value="1"/>
+		<reward type="Quest" id="Milestone_Zombie_Kill_100000"/>
+	</quest>
+	<quest id="Milestone_Zombie_Kill_100000">
+		
+		<property name="name" value="Zombies Killed 100000"/>
+		<property name="subtitle" value="Kill 100 zombies"/>
+		<property name="description" value="Gain some prestige in the area by killing zombies."/>
+		<property name="icon" value="ui_game_symbol_skull"/>
+		<property name="category_key" value="quest"/>
+		<property name="difficulty" value="easy"/> 
+		<property name="offer" value="Killing zombies is now a lifestyle"/>
+		<property name="shareable" value="false"/>
+		<property name="completiontype" value="TurnIn"/>
+		<property name="completion_key" value="You sure are making a dent in the zombie population around here, a tiny dent but one none the less!"/>
+		
+		<objective type="ZombieKill" value="100000" phase="1"/>
+
+		<objective type="ReturnToNPC">
+			<property name="phase" value="2"/>
+		</objective>
+		<objective type="InteractWithNPC">
+			<property name="phase" value="2"/>
+		</objective>
+	
+		<reward type="Exp" value="10000"/>	
+		<reward type="Item" id="casinoCoin" value="19200-64000"/>
+		<reward type="Item" id="ammoGasCan" value="10000"/>
+		<reward type="LootItem" id="questMods" value="1"/>
+		<reward type="LootItem" id="questTools" value="1"/>
+		<reward type="Quest" id="Milestone_Zombie_Kill_500000"/>
+	</quest>
+	<quest id="Milestone_Zombie_Kill_500000">
+		
+		<property name="name" value="Zombies Killed 500000"/>
+		<property name="subtitle" value="Kill 100 zombies"/>
+		<property name="description" value="Gain some prestige in the area by killing zombies."/>
+		<property name="icon" value="ui_game_symbol_skull"/>
+		<property name="category_key" value="quest"/>
+		<property name="difficulty" value="easy"/> 
+		<property name="offer" value="Killing zombies is now a lifestyle"/>
+		<property name="shareable" value="false"/>
+		<property name="completiontype" value="TurnIn"/>
+		<property name="completion_key" value="You sure are making a dent in the zombie population around here, a tiny dent but one none the less!"/>
+		
+		<objective type="ZombieKill" value="500000" phase="1"/>
+
+		<objective type="ReturnToNPC">
+			<property name="phase" value="2"/>
+		</objective>
+		<objective type="InteractWithNPC">
+			<property name="phase" value="2"/>
+		</objective>
+	
+		<reward type="Exp" value="10000"/>	
+		<reward type="Item" id="casinoCoin" value="38400-128000"/>
+		<reward type="Item" id="ammoGasCan" value="10000"/>
+		<reward type="LootItem" id="questMods" value="1"/>
+		<reward type="LootItem" id="questTools" value="1"/>
+	</quest>
+-->
+</append>
+</Drs_Milestones_Zombie_Killer>

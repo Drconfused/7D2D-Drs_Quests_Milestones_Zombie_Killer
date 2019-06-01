@@ -1,0 +1,81 @@
+<Drs_Milestones_Zombie_Killer>
+<!-- 	Loot Group Index
+questKillerAmmo
+questKillerArmor
+questKillerGuns
+questKillerMelee
+questKiller
+-->
+<append xpath="/lootcontainers" >
+<!--	questKillerAmmo
+treasureAmmo
+militaryAmmo
+ammoRocket
+ammoSteel
+ammo
+-->
+<lootgroup name="questKillerAmmo" count="1">
+	<item group="treasureAmmo" count="1"/>
+	<item group="militaryAmmo" count="1"/>
+	<item group="ammoRocket" count="1"/>
+	<item group="ammoSteel" count="1"/>
+	<item group="ammo" count="1"/>
+</lootgroup>
+<!--	questKillerArmor
+Armor
+steelArmor
+ironArmor
+scrapArmor
+militaryArmor
+leatherArmor
+lightArmor
+-->
+<lootgroup name="questKillerArmor" count="1">
+	<item group="Armor" count="1"/>
+	<item group="steelArmor" count="1"/>
+	<item group="ironArmor" count="1"/>
+	<item group="scrapArmor" count="1"/>
+	<item group="militaryArmor" count="1"/>
+	<item group="leatherArmor" count="1"/>
+	<item group="lightArmor" count="1"/>
+</lootgroup>
+<!--	questKillerGuns
+questRanged
+weaponsBasicGuns+ammo
+modGunT1
+modGunT2
+modGunT3
+-->
+<lootgroup name="questKillerGuns" count="1">
+	<item group="questRanged" count="1"/>
+	<item group="weaponsBasicGuns+ammo" count="1"/>
+	<item group="modGunT1" count="1"/>
+	<item group="modGunT2" count="1"/>
+	<item group="modGunT3" count="1"/>
+</lootgroup>
+<!--	questKillerMelee
+weaponsMelee
+modMeleeT1
+modMeleeT2
+modMeleeT3
+modGunMeleeT2
+modGunMeleeT3
+-->
+<lootgroup name="questKillerMelee" count="1">
+	<item group="weaponsMelee" count="1"/>
+	<item group="modMeleeT1" count="1"/>
+	<item group="modMeleeT2" count="1"/>
+	<item group="modMeleeT3" count="1"/>
+	<item group="modGunMeleeT2" count="1"/>
+	<item group="modGunMeleeT3" count="1"/>
+</lootgroup>
+
+<lootgroup name="questKiller">
+	<item group="questKillerAmmo" count="1"/>
+	<item group="questKillerArmor" count="1"/>
+	<item group="questKillerGuns" count="1"/>
+	<item group="questKillerMelee" count="1"/>
+</lootgroup>
+</append>
+</Drs_Milestones_Zombie_Killer>
+
