@@ -61,15 +61,13 @@
 		<reward type="Exp" value="1000" />
 		<reward type="Item" id="casinoCoin" value="300-1000" />
 		<reward type="Item" id="ammoGasCan" value="1000" />
-		<reward type="LootItem" id="ammo" value="2" />
-		<reward type="LootItem" id="questKillerAmmo" ischosen="true" value="11" />
-		<reward type="LootItem" id="questKillerArmor" ischosen="true" value="11" />
-		<reward type="LootItem" id="questKillerGuns" ischosen="true" value="11" />
+		<reward type="LootItem" id="questKillerAmmo,questKillerAmmoSteel" ischosen="true" value="11" />
+		<reward type="LootItem" id="questArmor" ischosen="true" value="11" />
+		<reward type="LootItem" id="questRanged" ischosen="true" value="11" />
 		<reward type="LootItem" id="questKillerMelee" ischosen="true" value="11" />
 		<reward type="LootItem" id="questMods" value="2" />
-		
 		<reward type="LootItem" id="questBaseDefense" ischosen="true" value="11" />
-		<reward type="LootItem" id="questConstructionBlocks,questConstructionMaterials,questConstructionExtras" value="11" />
+		<reward type="LootItem" id="questConstructionBlocks,questConstructionMaterials,questConstructionExtras" ischosen="true" isfixed="true" value="11" />
 		
 	</quest>	
 	<quest id="Quest_Chit5">
@@ -92,10 +90,9 @@
 		<reward type="Exp" value="2000" />
 		<reward type="Item" id="casinoCoin" value="600-2000" />
 		<reward type="Item" id="ammoGasCan" value="2000" />
-		<reward type="LootItem" id="ammo" value="4" />
-		<reward type="LootItem" id="questKillerAmmo" ischosen="true" value="14" />
-		<reward type="LootItem" id="questKillerArmor" ischosen="true" value="14" />
-		<reward type="LootItem" id="questKillerGuns" ischosen="true" value="14" />
+		<reward type="LootItem" id="questKillerAmmo,questKillerAmmoSteel" ischosen="true" value="14" />
+		<reward type="LootItem" id="questArmor" ischosen="true" value="14" />
+		<reward type="LootItem" id="questRanged" ischosen="true" value="14" />
 		<reward type="LootItem" id="questKillerMelee" ischosen="true" value="14" />
 		<reward type="LootItem" id="questMods" value="4" />
 		<reward type="LootItem" id="questConstructionBlocks,questConstructionMaterials,questConstructionExtras" ischosen="true" isfixed="true" value="14" />
@@ -121,10 +118,9 @@
 		<reward type="Exp" value="4000" />
 		<reward type="Item" id="casinoCoin" value="1200-4000" />
 		<reward type="Item" id="ammoGasCan" value="4000" />
-		<reward type="LootItem" id="ammo" value="6" />
-		<reward type="LootItem" id="questKillerAmmo" ischosen="true" value="16" />
-		<reward type="LootItem" id="questKillerArmor" ischosen="true" value="16" />
-		<reward type="LootItem" id="questKillerGuns" ischosen="true" value="16" />
+		<reward type="LootItem" id="questKillerAmmo,questKillerAmmoSteel" ischosen="true" value="16" />
+		<reward type="LootItem" id="questArmor" ischosen="true" value="16" />
+		<reward type="LootItem" id="questRanged" ischosen="true" value="16" />
 		<reward type="LootItem" id="questKillerMelee" ischosen="true" value="16" />
 		<reward type="LootItem" id="questMods" value="6" />
 		<reward type="LootItem" id="questConstructionBlocks,questConstructionMaterials,questConstructionExtras" ischosen="true" isfixed="true" value="16" />
@@ -151,10 +147,9 @@
 		<reward type="Exp" value="8000" />
 		<reward type="Item" id="casinoCoin" value="2400-8000" />
 		<reward type="Item" id="ammoGasCan" value="8000" />
-		<reward type="LootItem" id="ammo" value="6" />
-		<reward type="LootItem" id="questKillerAmmo" ischosen="true" value="16" />
-		<reward type="LootItem" id="questKillerArmor" ischosen="true" value="16" />
-		<reward type="LootItem" id="questKillerGuns" ischosen="true" value="16" />
+		<reward type="LootItem" id="questKillerAmmo,questKillerAmmoSteel" ischosen="true" value="16" />
+		<reward type="LootItem" id="questArmor" ischosen="true" value="16" />
+		<reward type="LootItem" id="questRanged" ischosen="true" value="16" />
 		<reward type="LootItem" id="questKillerMelee" ischosen="true" value="16" />
 		<reward type="LootItem" id="questMods" value="6" />
 		<reward type="LootItem" id="questConstructionBlocks,questConstructionMaterials,questConstructionExtras" ischosen="true" isfixed="true" value="16" />
@@ -181,10 +176,10 @@
 		<reward type="Exp" value="10000" />
 		<reward type="Item" id="casinoCoin" value="4800-16000" />
 		<reward type="Item" id="ammoGasCan" value="10000" />
-		<reward type="LootItem" id="ammo" value="6" />
-		<reward type="LootItem" id="questKillerAmmo" ischosen="true" value="16" />
-		<reward type="LootItem" id="questKillerArmor" ischosen="true" value="16" />
-		<reward type="LootItem" id="questKillerGuns" ischosen="true" value="16" />
+
+		<reward type="LootItem" id="questKillerAmmo,questKillerAmmoSteel" ischosen="true" value="16" />
+		<reward type="LootItem" id="questArmor" ischosen="true" value="16" />
+		<reward type="LootItem" id="questRanged" ischosen="true" value="16" />
 		<reward type="LootItem" id="questKillerMelee" ischosen="true" value="16" />
 		<reward type="LootItem" id="questMods" value="6" />
 		<reward type="LootItem" id="questConstructionBlocks,questConstructionMaterials,questConstructionExtras" ischosen="true" isfixed="true" value="16" />
@@ -211,10 +206,9 @@
 		<reward type="Exp" value="10000" />
 		<reward type="Item" id="casinoCoin" value="9600-32000" />
 		<reward type="Item" id="ammoGasCan" value="10000" />
-		<reward type="LootItem" id="ammo" value="6" />
-		<reward type="LootItem" id="questKillerAmmo" ischosen="true" value="16" />
-		<reward type="LootItem" id="questKillerArmor" ischosen="true" value="16" />
-		<reward type="LootItem" id="questKillerGuns" ischosen="true" value="16" />
+		<reward type="LootItem" id="questKillerAmmo,questKillerAmmoSteel" ischosen="true" value="16" />
+		<reward type="LootItem" id="questArmor" ischosen="true" value="16" />
+		<reward type="LootItem" id="questRanged" ischosen="true" value="16" />
 		<reward type="LootItem" id="questKillerMelee" ischosen="true" value="16" />
 		<reward type="LootItem" id="questMods" value="6" />
 		<reward type="LootItem" id="questConstructionBlocks,questConstructionMaterials,questConstructionExtras" ischosen="true" isfixed="true" value="16" />
@@ -241,10 +235,9 @@
 		<reward type="Exp" value="10000" />
 		<reward type="Item" id="casinoCoin" value="19200-64000" />
 		<reward type="Item" id="ammoGasCan" value="10000" />
-		<reward type="LootItem" id="ammo" value="6" />
-		<reward type="LootItem" id="questKillerAmmo" ischosen="true" value="16" />
-		<reward type="LootItem" id="questKillerArmor" ischosen="true" value="16" />
-		<reward type="LootItem" id="questKillerGuns" ischosen="true" value="16" />
+		<reward type="LootItem" id="questKillerAmmo,questKillerAmmoSteel" ischosen="true" value="16" />
+		<reward type="LootItem" id="questArmor" ischosen="true" value="16" />
+		<reward type="LootItem" id="questRanged" ischosen="true" value="16" />
 		<reward type="LootItem" id="questKillerMelee" ischosen="true" value="16" />
 		<reward type="LootItem" id="questMods" value="6" />
 		<reward type="LootItem" id="questConstructionBlocks,questConstructionMaterials,questConstructionExtras" ischosen="true" isfixed="true" value="16" />
@@ -271,15 +264,14 @@
 		<reward type="Exp" value="10000" />
 		<reward type="Item" id="casinoCoin" value="38400-128000" />
 		<reward type="Item" id="ammoGasCan" value="10000" />
-		<reward type="LootItem" id="ammo" value="6" />
-		<reward type="LootItem" id="questKillerAmmo" ischosen="true" value="16" />
-		<reward type="LootItem" id="questKillerArmor" ischosen="true" value="16" />
-		<reward type="LootItem" id="questKillerGuns" ischosen="true" value="16" />
+		<reward type="LootItem" id="questKillerAmmo,questKillerAmmoSteel" ischosen="true" value="16" />
+		<reward type="LootItem" id="questArmor" ischosen="true" value="16" />
+		<reward type="LootItem" id="questRanged" ischosen="true" value="16" />
 		<reward type="LootItem" id="questKillerMelee" ischosen="true" value="16" />
 		<reward type="LootItem" id="questMods" value="6" />
 		<reward type="LootItem" id="questConstructionBlocks,questConstructionMaterials,questConstructionExtras" ischosen="true" isfixed="true" value="16" />
 		<reward type="SkillPoints" value="1" />	
-	</quest>	
+	</quest>
 
 <!-- This is removed because of limitations resetting kill counter at 284.
 	<quest id="Milestone_Zombie_Kill_500">

@@ -1,6 +1,6 @@
 Drs_Milestones_Zombie_Killer
 
-		Current version 0.03	
+		Current version 0.04
 			**Drconfused**
 
 <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
@@ -119,6 +119,8 @@ Drs_Milestones_Zombie_Killer
 
 <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
 <!-- ~~~~~~~~~~~~~~~~~~~~~~~VERSION HISTORY~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+	0.04
+		had to juggle the loot so that it wouldn't toss an error at hand in.
 	0.03
 		Making icons for the chit quests so its easier to discern which one it is.
 		adds in localization files
